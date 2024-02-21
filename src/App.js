@@ -1,13 +1,23 @@
 import React from 'react';
-import {Container, Title} from './styles.js';
+import {Container, Image, ContainerItems, H1, InputLabel, Input, Button} from './styles.js';
 
 export default function App() {
 
-  const hello = "Hello, World!"
-
   return(
     <Container>
-      
+      <Image></Image>
+
+      <ContainerItems>
+        <H1>Olá!</H1>
+
+        <InputLabel>Nome</InputLabel>
+        <Input placeholder='Nome completo...'></Input>
+
+        <InputLabel>Idade</InputLabel>
+        <Input placeholder='Nome completo...'></Input>
+
+        <Button>Cadastrar</Button>
+      </ContainerItems>
     </Container>
   )
 
